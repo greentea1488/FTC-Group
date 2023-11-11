@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "458478253024",
+    "project_id": "ftc-group-eb1ae",
+    "storage_bucket": "ftc-group-eb1ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458478253024:android:0c9f810b674794ceee3185",
+        "android_client_info": {
+          "package_name": "com.mycompany.ftcgroup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458478253024-3j4m5jvukv03qdn2bcqnchpadvmf50ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzIqEtqXBaM0drJeFB_Q1uAwVxW0Uxz3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458478253024-3j4m5jvukv03qdn2bcqnchpadvmf50ru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "458478253024-tfedk4mrdvtrms7488mkdjiqnqeksnup.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.ftcgroup"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
