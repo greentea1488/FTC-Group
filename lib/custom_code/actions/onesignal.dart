@@ -13,7 +13,7 @@ import 'package:onesignal_flutter/onesignal_flutter.dart';
 Future onesignal() async {
   OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
 
-  OneSignal.initialize('92ea8529-cdc8-4966-bcfc-5e9479204810');
+  OneSignal.initialize('c3175e04-960b-4605-800a-8e8831bad35d');
 
   OneSignal.Notifications.requestPermission(true);
 }

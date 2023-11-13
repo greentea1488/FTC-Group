@@ -231,11 +231,8 @@ class _ProfileCabinetWidgetState extends State<ProfileCabinetWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Text(
-                                              valueOrDefault<String>(
-                                                profileCabinetAppUsersRow
-                                                    ?.displayName,
-                                                '0',
-                                              ),
+                                              profileCabinetAppUsersRow!
+                                                  .displayName!,
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
@@ -284,11 +281,7 @@ class _ProfileCabinetWidgetState extends State<ProfileCabinetWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Text(
-                                              valueOrDefault<String>(
-                                                profileCabinetAppUsersRow
-                                                    ?.email,
-                                                '0',
-                                              ),
+                                              currentUserEmail,
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
