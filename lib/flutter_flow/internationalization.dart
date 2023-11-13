@@ -336,8 +336,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nc9zxm06': {
       'ru': 'Мы отправим вам на почту код подтверждения',
-      'en': 'Follow the link in the email to confirm your email. Then sign in',
-      'tr': 'E-postayı onaylamak için e-postadaki bağlantıyı takip edin',
+      'en': 'We will send you a confirmation code by email',
+      'tr': 'Size e-postayla bir onay kodu göndereceğiz',
     },
     'wbv75ama': {
       'ru': 'Отправить код',
@@ -356,8 +356,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     's5s2mmf4': {
       'ru': 'Вставьте код, который пришел на вашу почту сюда',
-      'en': 'Follow the link in the email to confirm your email.',
-      'tr': 'E-postayı onaylamak için e-postadaki bağlantıyı takip edin',
+      'en': 'Paste the code that came to your email here',
+      'tr': 'E-postanıza gelen kodu buraya yapıştırın',
     },
     'o7f037cf': {
       'ru': 'Отправить еще раз',
