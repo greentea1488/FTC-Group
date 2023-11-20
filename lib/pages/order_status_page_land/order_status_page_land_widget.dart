@@ -294,8 +294,12 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                           MainAxisSize.max,
                                                       children: [
                                                         Text(
-                                                          widget.orderLandRef!
-                                                              .batchNumber!,
+                                                          valueOrDefault<
+                                                              String>(
+                                                            widget.orderLandRef
+                                                                ?.batchNumber,
+                                                            'Data is not filled in',
+                                                          ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -352,8 +356,12 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                           MainAxisSize.max,
                                                       children: [
                                                         Text(
-                                                          widget.orderLandRef!
-                                                              .autoName!,
+                                                          valueOrDefault<
+                                                              String>(
+                                                            widget.orderLandRef
+                                                                ?.autoName,
+                                                            'Data is not filled in',
+                                                          ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -410,8 +418,12 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                           MainAxisSize.max,
                                                       children: [
                                                         Text(
-                                                          widget.orderLandRef!
-                                                              .tradeMark!,
+                                                          valueOrDefault<
+                                                              String>(
+                                                            widget.orderLandRef
+                                                                ?.tradeMark,
+                                                            'Data is not filled in',
+                                                          ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -543,21 +555,21 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                                             String>(
                                                                       columnBatchNumberRow
                                                                           .goodsName,
-                                                                      '0',
+                                                                      'Data is not filled in',
                                                                     ),
                                                                     parameter2:
                                                                         valueOrDefault<
                                                                             String>(
                                                                       columnBatchNumberRow
                                                                           .boxCount,
-                                                                      '0',
+                                                                      'Data is not filled in',
                                                                     ),
                                                                     parameter3:
                                                                         valueOrDefault<
                                                                             String>(
                                                                       columnBatchNumberRow
                                                                           .palletCount,
-                                                                      '0',
+                                                                      'Data is not filled in',
                                                                     ),
                                                                   ),
                                                                 ),
@@ -692,7 +704,7 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                                         widget
                                                                             .orderLandRef
                                                                             ?.arrivalTime,
-                                                                        '0',
+                                                                        'Data is not filled in',
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
@@ -830,7 +842,7 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                                         widget
                                                                             .orderLandRef
                                                                             ?.terminalEntry,
-                                                                        '0',
+                                                                        'Data is not filled in',
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
@@ -968,7 +980,7 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                                         widget
                                                                             .orderLandRef
                                                                             ?.quarantineTime,
-                                                                        '0',
+                                                                        'Data is not filled in',
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
@@ -1106,7 +1118,7 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                                         widget
                                                                             .orderLandRef
                                                                             ?.sealingTime,
-                                                                        '0',
+                                                                        'Data is not filled in',
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
@@ -1234,7 +1246,7 @@ class _OrderStatusPageLandWidgetState extends State<OrderStatusPageLandWidget> {
                                                                         widget
                                                                             .orderLandRef
                                                                             ?.declarationSubmissionTime,
-                                                                        '0',
+                                                                        'Data is not filled in',
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)

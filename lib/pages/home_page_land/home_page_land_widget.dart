@@ -850,15 +850,15 @@ class _HomePageLandWidgetState extends State<HomePageLandWidget> {
                                                                                     FFLocalizations.of(context).getVariableText(
                                                                                       ruText: valueOrDefault<String>(
                                                                                         functions.datetotextFuncLandRus(ordersLandActiveItem.arrivalTime, ordersLandActiveItem.terminalEntry, ordersLandActiveItem.quarantineTime, ordersLandActiveItem.sealingTime, ordersLandActiveItem.declarationSubmissionTime),
-                                                                                        '0',
+                                                                                        'Data is not filled in',
                                                                                       ),
                                                                                       enText: valueOrDefault<String>(
                                                                                         functions.datetotextFuncLandEng(ordersLandActiveItem.arrivalTime, ordersLandActiveItem.terminalEntry, ordersLandActiveItem.quarantineTime, ordersLandActiveItem.sealingTime, ordersLandActiveItem.declarationSubmissionTime),
-                                                                                        '0',
+                                                                                        'Data is not filled in',
                                                                                       ),
                                                                                       trText: valueOrDefault<String>(
                                                                                         functions.datetotextFuncLandTurc(ordersLandActiveItem.arrivalTime, ordersLandActiveItem.terminalEntry, ordersLandActiveItem.quarantineTime, ordersLandActiveItem.sealingTime, ordersLandActiveItem.declarationSubmissionTime),
-                                                                                        '0',
+                                                                                        'Data is not filled in',
                                                                                       ),
                                                                                     ),
                                                                                     'Data is not filled in',
@@ -1091,15 +1091,15 @@ class _HomePageLandWidgetState extends State<HomePageLandWidget> {
                                                                                     FFLocalizations.of(context).getVariableText(
                                                                                       ruText: valueOrDefault<String>(
                                                                                         functions.datetotextFuncLandRus(ordersLandActiveItem.arrivalTime, ordersLandActiveItem.terminalEntry, ordersLandActiveItem.quarantineTime, ordersLandActiveItem.sealingTime, ordersLandActiveItem.declarationSubmissionTime),
-                                                                                        '0',
+                                                                                        'Data is not filled in',
                                                                                       ),
                                                                                       enText: valueOrDefault<String>(
                                                                                         functions.datetotextFuncLandEng(ordersLandActiveItem.arrivalTime, ordersLandActiveItem.terminalEntry, ordersLandActiveItem.quarantineTime, ordersLandActiveItem.sealingTime, ordersLandActiveItem.declarationSubmissionTime),
-                                                                                        '0',
+                                                                                        'Data is not filled in',
                                                                                       ),
                                                                                       trText: valueOrDefault<String>(
                                                                                         functions.datetotextFuncLandTurc(ordersLandActiveItem.arrivalTime, ordersLandActiveItem.terminalEntry, ordersLandActiveItem.quarantineTime, ordersLandActiveItem.sealingTime, ordersLandActiveItem.declarationSubmissionTime),
-                                                                                        '0',
+                                                                                        'Data is not filled in',
                                                                                       ),
                                                                                     ),
                                                                                     'Data is not filled in',
@@ -1317,9 +1317,18 @@ class _HomePageLandWidgetState extends State<HomePageLandWidget> {
                                                                                 Text(
                                                                                   valueOrDefault<String>(
                                                                                     FFLocalizations.of(context).getVariableText(
-                                                                                      ruText: functions.datetotextFuncLandRus(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
-                                                                                      enText: functions.datetotextFuncLandEng(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
-                                                                                      trText: functions.datetotextFuncLandTurc(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
+                                                                                      ruText: valueOrDefault<String>(
+                                                                                        functions.datetotextFuncLandRus(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
+                                                                                        'Data is not filled in',
+                                                                                      ),
+                                                                                      enText: valueOrDefault<String>(
+                                                                                        functions.datetotextFuncLandEng(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
+                                                                                        'Data is not filled in',
+                                                                                      ),
+                                                                                      trText: valueOrDefault<String>(
+                                                                                        functions.datetotextFuncLandTurc(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
+                                                                                        'Data is not filled in',
+                                                                                      ),
                                                                                     ),
                                                                                     'Data is not filled in',
                                                                                   ),
@@ -1587,10 +1596,16 @@ class _HomePageLandWidgetState extends State<HomePageLandWidget> {
                                                                                     FFLocalizations.of(context).getVariableText(
                                                                                       ruText: valueOrDefault<String>(
                                                                                         functions.datetotextFuncLandRus(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
-                                                                                        '0',
+                                                                                        'Data is not filled in',
                                                                                       ),
-                                                                                      enText: functions.datetotextFuncLandEng(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
-                                                                                      trText: functions.datetotextFuncLandTurc(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
+                                                                                      enText: valueOrDefault<String>(
+                                                                                        functions.datetotextFuncLandEng(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
+                                                                                        'Data is not filled in',
+                                                                                      ),
+                                                                                      trText: valueOrDefault<String>(
+                                                                                        functions.datetotextFuncLandTurc(ordersLandArchieveItem.arrivalTime, ordersLandArchieveItem.terminalEntry, ordersLandArchieveItem.quarantineTime, ordersLandArchieveItem.sealingTime, ordersLandArchieveItem.declarationSubmissionTime),
+                                                                                        'Data is not filled in',
+                                                                                      ),
                                                                                     ),
                                                                                     'Data is not filled in',
                                                                                   ),

@@ -2,12 +2,12 @@ import '/auth/supabase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
 import '/components/no_active_orders_widget.dart';
 import '/components/no_archieve_orders_widget.dart';
-import '/components/resend_mail_page_copy_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import '/flutter_flow/permissions_util.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -40,6 +40,7 @@ class _HomePageSeaWidgetState extends State<HomePageSeaWidget> {
         FFAppState().searchActiveSea1 = false;
         FFAppState().searchActiveSea2 = false;
       });
+      await requestPermission(notificationsPermission);
     });
 
     _model.textController1 ??= TextEditingController();
@@ -155,34 +156,8 @@ class _HomePageSeaWidgetState extends State<HomePageSeaWidget> {
                                           hoverColor: Colors.transparent,
                                           highlightColor: Colors.transparent,
                                           onTap: () async {
-                                            await showModalBottomSheet(
-                                              isScrollControlled: true,
-                                              backgroundColor:
-                                                  Colors.transparent,
-                                              isDismissible: false,
-                                              enableDrag: false,
-                                              context: context,
-                                              builder: (context) {
-                                                return GestureDetector(
-                                                  onTap: () => _model
-                                                          .unfocusNode
-                                                          .canRequestFocus
-                                                      ? FocusScope.of(context)
-                                                          .requestFocus(_model
-                                                              .unfocusNode)
-                                                      : FocusScope.of(context)
-                                                          .unfocus(),
-                                                  child: Padding(
-                                                    padding:
-                                                        MediaQuery.viewInsetsOf(
-                                                            context),
-                                                    child:
-                                                        ResendMailPageCopyWidget(),
-                                                  ),
-                                                );
-                                              },
-                                            ).then(
-                                                (value) => safeSetState(() {}));
+                                            await requestPermission(
+                                                notificationsPermission);
                                           },
                                           child: Text(
                                             FFLocalizations.of(context).getText(
@@ -834,15 +809,15 @@ class _HomePageSeaWidgetState extends State<HomePageSeaWidget> {
                                                                                 FFLocalizations.of(context).getVariableText(
                                                                                   ruText: valueOrDefault<String>(
                                                                                     functions.datetotextFuncRus(activeSeaItem.dateArrive, activeSeaItem.dateQuarantine, activeSeaItem.datePrintcuts, activeSeaItem.dateDeclarationSub, activeSeaItem.dateDeclarIssue, activeSeaItem.dateDeparture),
-                                                                                    '0',
+                                                                                    'Data is not filled in',
                                                                                   ),
                                                                                   enText: valueOrDefault<String>(
                                                                                     functions.datetotextFuncRus(activeSeaItem.dateArrive, activeSeaItem.dateQuarantine, activeSeaItem.datePrintcuts, activeSeaItem.dateDeclarationSub, activeSeaItem.dateDeclarIssue, activeSeaItem.dateDeparture),
-                                                                                    '0',
+                                                                                    'Data is not filled in',
                                                                                   ),
                                                                                   trText: valueOrDefault<String>(
                                                                                     functions.datetotextFuncRus(activeSeaItem.dateArrive, activeSeaItem.dateQuarantine, activeSeaItem.datePrintcuts, activeSeaItem.dateDeclarationSub, activeSeaItem.dateDeclarIssue, activeSeaItem.dateDeparture),
-                                                                                    '0',
+                                                                                    'Data is not filled in',
                                                                                   ),
                                                                                 ),
                                                                                 'Data is not filled in',
@@ -1077,15 +1052,15 @@ class _HomePageSeaWidgetState extends State<HomePageSeaWidget> {
                                                                                 FFLocalizations.of(context).getVariableText(
                                                                                   ruText: valueOrDefault<String>(
                                                                                     functions.datetotextFuncRus(activeSeaItem.dateArrive, activeSeaItem.dateQuarantine, activeSeaItem.datePrintcuts, activeSeaItem.dateDeclarationSub, activeSeaItem.dateDeclarIssue, activeSeaItem.dateDeparture),
-                                                                                    '0',
+                                                                                    'Data is not filled in',
                                                                                   ),
                                                                                   enText: valueOrDefault<String>(
                                                                                     functions.datetotextFuncRus(activeSeaItem.dateArrive, activeSeaItem.dateQuarantine, activeSeaItem.datePrintcuts, activeSeaItem.dateDeclarationSub, activeSeaItem.dateDeclarIssue, activeSeaItem.dateDeparture),
-                                                                                    '0',
+                                                                                    'Data is not filled in',
                                                                                   ),
                                                                                   trText: valueOrDefault<String>(
                                                                                     functions.datetotextFuncRus(activeSeaItem.dateArrive, activeSeaItem.dateQuarantine, activeSeaItem.datePrintcuts, activeSeaItem.dateDeclarationSub, activeSeaItem.dateDeclarIssue, activeSeaItem.dateDeparture),
-                                                                                    '0',
+                                                                                    'Data is not filled in',
                                                                                   ),
                                                                                 ),
                                                                                 'Data is not filled in',
@@ -1560,15 +1535,15 @@ class _HomePageSeaWidgetState extends State<HomePageSeaWidget> {
                                                                                   FFLocalizations.of(context).getVariableText(
                                                                                     ruText: valueOrDefault<String>(
                                                                                       functions.datetotextFuncRus(ordersSeaArchItem.dateArrive, ordersSeaArchItem.dateQuarantine, ordersSeaArchItem.datePrintcuts, ordersSeaArchItem.dateDeclarationSub, ordersSeaArchItem.dateDeclarIssue, ordersSeaArchItem.dateDeparture),
-                                                                                      '0',
+                                                                                      'Data is not filled in',
                                                                                     ),
                                                                                     enText: valueOrDefault<String>(
                                                                                       functions.datetotextFuncSeaEng(ordersSeaArchItem.dateArrive, ordersSeaArchItem.dateQuarantine, ordersSeaArchItem.datePrintcuts, ordersSeaArchItem.dateDeclarationSub, ordersSeaArchItem.dateDeclarIssue, ordersSeaArchItem.dateDeparture),
-                                                                                      '0',
+                                                                                      'Data is not filled in',
                                                                                     ),
                                                                                     trText: valueOrDefault<String>(
                                                                                       functions.datetotextFuncSeaTurc(ordersSeaArchItem.dateArrive, ordersSeaArchItem.dateQuarantine, ordersSeaArchItem.datePrintcuts, ordersSeaArchItem.dateDeclarationSub, ordersSeaArchItem.dateDeclarIssue, ordersSeaArchItem.dateDeparture),
-                                                                                      '0',
+                                                                                      'Data is not filled in',
                                                                                     ),
                                                                                   ),
                                                                                   'Data is not filled in',
